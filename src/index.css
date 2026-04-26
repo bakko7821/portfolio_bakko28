@@ -28,11 +28,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
   display: flex;
+  min-height: 100%;
   justify-content: center; /* горизонтально */
   font-family: "SF-Pro", sans-serif;
   background-color: #171717;
@@ -40,6 +40,7 @@ body {
 
 #root {
   width: 1440px;
+  height: 100%;
   margin: 0 auto;
   border: 2px red solid;
 }

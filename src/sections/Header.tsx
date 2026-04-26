@@ -9,12 +9,12 @@ export const Header = () => {
             </a>
           </li>
           <li>
-            <a href="" className="text-2xl">
+            <a href="#works" className="text-2xl">
               Работы
             </a>
           </li>
           <li>
-            <a href="" className="text-2xl">
+            <a href="#price" className="text-2xl">
               Прайс
             </a>
           </li>
