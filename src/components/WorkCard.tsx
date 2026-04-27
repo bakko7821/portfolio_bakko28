@@ -3,7 +3,12 @@ export interface WorkCard {
   name: string;
   description: string;
   link: string;
-  images: [{ id: number; imagePath: string }];
+  images: Image[];
+}
+
+interface Image {
+  id: number;
+  imagePath: string;
 }
 
 interface WorkCardProps {
