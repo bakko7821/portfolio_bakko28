@@ -13,12 +13,12 @@ export const Price = () => {
           лучше написать лично.<span className="text-sky-400">*</span>
         </p>
         <div className="flex items-center justify-center gap-2">
-          <button>
-            <img src={MaxLogo} alt="" />
-          </button>
-          <button>
-            Написать в Telegram <TelegramLogo width={} height={} className="" />
-          </button>
+          <a className="cursor-pointer">
+            <img src={MaxLogo} alt="" className="w-12 h-12" />
+          </a>
+          <a className="cursor-pointer flex items-center justify-center gap-1 px-4 py-2 rounded-[10px] bg-sky-400 text-white text-2xl font-medium">
+            Написать в Telegram <TelegramLogo className="text-white w-8 h-8" />
+          </a>
         </div>
       </div>
     </section>
