@@ -9,15 +9,15 @@ export const Works = () => {
     <section id="works" className="flex flex-col gap-0">
       <SectionHeader title="Работы" secondTitle="works" />
 
-      <ul className="py-4 grid grid-cols-3 gap-4 w-full">
+      <ul className="grid grid-cols-3 auto-rows-[250px] gap-4 w-full">
         {first && (
-          <li className="col-span-2">
+          <li className="col-span-2 row-span-2 h-full">
             <WorkCard card={first} />
           </li>
         )}
 
         {rest.map((card: WorkCard) => (
-          <li key={card.id}>
+          <li key={card.id} className="h-full">
             <WorkCard card={card} />
           </li>
         ))}

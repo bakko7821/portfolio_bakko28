@@ -10,7 +10,9 @@ export const Price = () => {
       <SectionHeader title="Прайс" secondTitle="price" />
       <ul className="flex items-start justify-between gap-4 p-0">
         {PriceCardsArray.map((card) => (
-          <PriceCard card={card} />
+          <li>
+            <PriceCard card={card} />
+          </li>
         ))}
       </ul>
       <div className="p-4 flex flex-col gap-8 items-center justify-center">

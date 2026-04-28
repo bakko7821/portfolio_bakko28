@@ -14,6 +14,11 @@ interface Image {
 interface WorkCardProps {
   card: WorkCard;
 }
+
 export const WorkCard = ({ card }: WorkCardProps) => {
-  return <article key={card.id}></article>;
+  return (
+    <article id={`${card.id}`} className="h-full overflow-hidden bg-red-300">
+      <img className="w-full h-full object-cover" src="" alt="" />
+    </article>
+  );
 };
