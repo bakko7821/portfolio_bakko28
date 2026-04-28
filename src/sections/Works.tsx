@@ -9,7 +9,7 @@ export const Works = () => {
     <section id="works" className="flex flex-col gap-0">
       <SectionHeader title="Работы" secondTitle="works" />
 
-      <ul className="grid grid-cols-3 auto-rows-[250px] gap-4 w-full">
+      <ul className="grid grid-cols-3 auto-rows-[250px] gap-4 w-full py-4">
         {first && (
           <li className="col-span-2 row-span-2 h-full">
             <WorkCard card={first} />

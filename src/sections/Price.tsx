@@ -8,7 +8,7 @@ export const Price = () => {
   return (
     <section id="price" className="">
       <SectionHeader title="Прайс" secondTitle="price" />
-      <ul className="flex items-start justify-between gap-4 p-0">
+      <ul className="flex items-start justify-between gap-4 py-4">
         {PriceCardsArray.map((card) => (
           <li>
             <PriceCard card={card} />
