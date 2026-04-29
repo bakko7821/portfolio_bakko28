@@ -4,7 +4,7 @@ export const WorkCardsArray: WorkCard[] = [
   {
     id: 0,
     name: "Shortcut",
-    description: "",
+    description: "(Фриланс заказ)",
     link: "https://infoshortcut.ru/",
     images: [
       { id: 0, imagePath: "src/assets/images/projects/shortcut1.png" },
@@ -17,7 +17,7 @@ export const WorkCardsArray: WorkCard[] = [
   {
     id: 1,
     name: "Carent",
-    description: "",
+    description: "(Верстка по макету)",
     link: "https://bakko7821.github.io/carent-landing-page/",
     images: [
       { id: 0, imagePath: "src/assets/images/projects/carent1.png" },
@@ -31,7 +31,7 @@ export const WorkCardsArray: WorkCard[] = [
   {
     id: 2,
     name: "Solus",
-    description: "",
+    description: "(Верстка по макету)",
     link: "https://bakko7821.github.io/solus-landing-page/",
     images: [
       { id: 0, imagePath: "src/assets/images/projects/solus1.png" },
@@ -44,7 +44,7 @@ export const WorkCardsArray: WorkCard[] = [
   {
     id: 3,
     name: "Positivus",
-    description: "",
+    description: "(Верстка по макету)",
     link: "https://bakko7821.github.io/positivus-landing-page/",
     images: [
       { id: 0, imagePath: "src/assets/images/projects/positivus1.png" },
