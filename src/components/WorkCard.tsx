@@ -13,9 +13,10 @@ interface Image {
 
 interface WorkCardProps {
   card: WorkCard;
+  vertical?: boolean;
 }
 
-export const WorkCard = ({ card }: WorkCardProps) => {
+export const WorkCard = ({ card, vertical = false }: WorkCardProps) => {
   return (
     <article id={`${card.id}`} className="h-full p-4 flex flex-col gap-6">
       <img className="w-full h-full object-cover aspect-video" src="" alt="" />

@@ -3,7 +3,7 @@ import { WorkCard } from "../components/WorkCard";
 import { WorkCardsArray } from "../utils/workCardsArray";
 
 export const Works = () => {
-  const [first, ...rest]: WorkCard[] = WorkCardsArray;
+  const [first, second, ...rest]: WorkCard[] = WorkCardsArray;
 
   return (
     <section id="works" className="flex flex-col gap-0">
@@ -13,6 +13,11 @@ export const Works = () => {
         {first && (
           <li className="col-span-2 row-span-2 h-full">
             <WorkCard card={first} />
+          </li>
+        )}
+        {second && (
+          <li className="col-span-1 row-span-2 h-full">
+            <WorkCard card={first} vertical />
           </li>
         )}
 
