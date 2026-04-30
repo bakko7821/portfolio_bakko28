@@ -1,11 +1,18 @@
 import { SectionHeader } from "../components/SectionHeader";
 import MaxLogo from "../assets/images/Max_logo_2025.png";
 import TelegramLogo from "../assets/images/BxlTelegram.svg?react";
+import { PriceCardsArray } from "../utils/priceCardsArray";
+import { PriceCard } from "../components/PriceCard";
 
 export const Price = () => {
   return (
     <section id="price" className="">
       <SectionHeader title="Прайс" secondTitle="price" />
+      <ul className="flex items-start justify-between gap-0 p-0">
+        {PriceCardsArray.map((card) => (
+          <PriceCard card={card} />
+        ))}
+      </ul>
       <div className="p-4 flex flex-col gap-8 items-center justify-center">
         <p className="font-normal text-base text-white/50">
           Цены указаны на стандартные пакеты и варируются в зависимостри от
