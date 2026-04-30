@@ -14,16 +14,26 @@ interface PriceCardProps {
 
 export const PriceCard = ({ card }: PriceCardProps) => {
   return (
-    <li id={`${card.id}`}>
+    <li
+      id={`${card.id}`}
+      className="cursor-pointer bg-transparent group hover:bg-white transition-colors"
+    >
       <article className="p-4 flex flex-col gap-6">
-        <span className="flex items-center justify-start gap-2">
-          <p>{card.name}</p>
-          <p>{card.secondName}</p>
+        <span className="flex items-end justify-start gap-2">
+          <p className="text-4xl font-medium text-white group-hover:text-black transition-colors">
+            {card.name}
+          </p>
+          <p className="text-xl font-medium text-gray-400">{card.secondName}</p>
         </span>
+
         <div className="flex items-center justify-between">
-          <span className="flex items-center">
-            <p>{card.price}</p>
-            <p>{card.secondPrice}</p>
+          <span className="flex items-end gap-2">
+            <p className="text-2xl font-medium text-white group-hover:text-black transition-colors">
+              {card.price}
+            </p>
+            <p className="text-sm text-gray-400 font-medium">
+              {card.secondPrice}
+            </p>
           </span>
           <a
             href=""
